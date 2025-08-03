@@ -33,9 +33,9 @@ SearchFlix is a React-based web application that allows users to search for movi
 
 3. Start the development server:
    ```bash
-   npm start
+   npm run dev
    # or
-   yarn start
+   yarn dev
    ```
 
 4. Open your browser and navigate to `http://localhost:5173`
@@ -65,4 +65,4 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 
 ## License
 
-This project is licensed
+This project is licensed under the MIT
