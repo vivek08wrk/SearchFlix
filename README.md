@@ -9,6 +9,25 @@ SearchFlix is a React-based web application that allows users to search for movi
 - Responsive and modern UI
 - Fast and intuitive search experience
 
+## Powered by OMDb API
+
+SearchFlix uses the [OMDb API](https://www.omdbapi.com/) to fetch movie and TV show data.  
+You will need a free OMDb API key to use this application.
+
+### How to get an OMDb API Key
+
+1. Visit [http://www.omdbapi.com/apikey.aspx](http://www.omdbapi.com/apikey.aspx)
+2. Sign up with your email address.
+3. You will receive an API key via email.
+
+### Configure your API Key
+
+- Add your OMDb API key to the project configuration (e.g., in an `.env` file or directly in the code as required by your setup):
+
+  ```
+  VITE_OMDB_API_KEY=your_api_key_here
+  ```
+
 ## Getting Started
 
 ### Prerequisites
@@ -65,4 +84,4 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 
 ## License
 
-This project is licensed under the MIT
+This project is licensed under
