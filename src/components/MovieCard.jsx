@@ -30,7 +30,7 @@ export default function MovieCard({ allMovieData, loading }) {
 
   if (loading) {
     return (
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 lg:px-10 py-10">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 px-2 sm:px-4 lg:px-8 py-6 sm:py-8">
         {Array.from({ length: 8 }).map((_, i) => (
           <CardSkeleton key={i} />
         ))}
@@ -46,22 +46,22 @@ export default function MovieCard({ allMovieData, loading }) {
 
   return (
     <>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 lg:px-10">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 px-2 sm:px-4 lg:px-8">
         {allMovieData.map((item, index) => {
           const { Title, Year, Poster } = item;
           return (
             <button
               key={index}
       onClick={() => openDetails(item)}
-      className="text-left group surface p-4 rounded-2xl shadow hover:shadow-lg border border-gray-200 transition-transform hover:-translate-y-1"
+  className="text-left group surface p-3 sm:p-4 rounded-2xl shadow hover:shadow-lg border border-gray-200 transition-transform hover:-translate-y-1"
             >
-              <div className="overflow-hidden rounded-lg mb-2">
+        <div className="overflow-hidden rounded-lg mb-2">
                 <Image
                   src={Poster !== "N/A" ? Poster : "/vercel.svg"}
                   alt={Title}
                   width={300}
                   height={400}
-                  className="w-full h-64 object-cover group-hover:scale-[1.02] transition-transform"
+          className="w-full h-56 sm:h-64 object-cover group-hover:scale-[1.02] transition-transform"
                 />
               </div>
               <h2 className="text-lg text-gray-900 font-semibold">{Title}</h2>

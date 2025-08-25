@@ -57,9 +57,9 @@ export default function MovieModal({ open, onClose, movie }) {
       <div
         ref={dialogRef}
         tabIndex={-1}
-        className="relative bg-white rounded-2xl shadow-2xl max-w-5xl w-[94vw] md:w-[900px] max-h-[85vh] overflow-y-auto ring-1 ring-black/5 animate-in"
+        className="relative bg-white rounded-2xl shadow-2xl max-w-5xl w-[94vw] md:w-[900px] max-h-[88vh] overflow-y-auto ring-1 ring-black/5 animate-in"
       >
-        <header className="sticky top-0 z-10 bg-white/90 backdrop-blur border-b px-4 md:px-6 py-3 flex items-center justify-between rounded-t-2xl">
+        <header className="sticky top-0 z-10 bg-white/90 backdrop-blur border-b px-3 sm:px-4 md:px-6 py-2.5 sm:py-3 flex items-center justify-between rounded-t-2xl">
           <h2 id="movie-modal-title" className="text-xl md:text-2xl font-bold text-gray-900">{Title}</h2>
           <button
             onClick={onClose}
@@ -70,15 +70,15 @@ export default function MovieModal({ open, onClose, movie }) {
           </button>
         </header>
 
-        <div className="p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="p-3 sm:p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           <div className="md:col-span-1">
-            <div className="overflow-hidden rounded-xl border bg-gray-50">
+      <div className="overflow-hidden rounded-xl border bg-gray-50">
               <Image
                 src={Poster && Poster !== "N/A" ? Poster : "/vercel.svg"}
                 alt={Title || "Poster"}
                 width={400}
                 height={600}
-                className="w-full h-[420px] object-cover"
+        className="w-full h-[320px] sm:h-[380px] md:h-[420px] object-cover"
               />
             </div>
             <div className="mt-4 flex flex-wrap gap-2 text-xs">

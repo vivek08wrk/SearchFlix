@@ -19,7 +19,7 @@ export default function Navbar() {
     </Link>
   );
   return (
-  <nav className="px-4 bg-indigo-600/90 py-4 shadow sticky top-0 z-10">
+  <nav className="px-3 sm:px-4 bg-indigo-600/90 py-3 sm:py-4 shadow sticky top-0 z-10">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Image src="/assets/searchflix-logo.svg" alt="SearchFlix Logo" width={40} height={40} />
@@ -40,7 +40,7 @@ export default function Navbar() {
         </div>
       </div>
       {open && (
-        <div className="md:hidden mt-3 grid gap-1 text-white font-medium">
+        <div className="md:hidden mt-2 grid gap-1 text-white font-medium px-3 pb-2">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/contact">Contact</NavLink>
