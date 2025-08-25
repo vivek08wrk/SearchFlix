@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0b1020;
+  --foreground: #f5f7ff;
 }
 
 @theme inline {
@@ -20,7 +20,35 @@
 }
 
 body {
-  background: var(--background);
+  /* Dark overlay to keep text readable on any background */
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url('/serchflix.jpg') center / cover no-repeat fixed,
+    var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Improve legibility on top of the collage */
+.card,
+.panel,
+.surface {
+  background: rgba(255, 255, 255, 0.88);
+  color: #111827;
+}
+
+/* Optional variant: blurred surface for hero/primary panels */
+.surface-blur {
+  background: rgba(255, 255, 255, 0.72);
+  color: #111827;
+  -webkit-backdrop-filter: saturate(140%) blur(12px);
+  backdrop-filter: saturate(140%) blur(12px);
+}
+
+/* Utility helpers for sections */
+.section {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(17, 24, 39, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
 }
