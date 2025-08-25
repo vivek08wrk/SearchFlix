@@ -1,7 +1,7 @@
 export default function SearchBar({ searchMovie, setSearchMovie, fetchMovieData }) {
   return (
     <form
-      className="flex justify-center py-5 px-4 gap-0"
+      className="flex justify-center py-5 px-4 gap-0 bg-transparent"
       onSubmit={e => {
         e.preventDefault();
         fetchMovieData();
@@ -12,7 +12,7 @@ export default function SearchBar({ searchMovie, setSearchMovie, fetchMovieData 
         placeholder="Search movies..."
         value={searchMovie}
         onChange={e => setSearchMovie(e.target.value)}
-        className="rounded-l-lg w-80 bg-white placeholder-gray-400 px-4 py-2 outline-none border-2 border-gray-300 text-black focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 shadow-sm"
+        className="rounded-l-lg w-80 bg-transparent placeholder-white/70 px-4 py-2 outline-none border-2 border-white/30 text-white focus:border-white/60 focus:ring-2 focus:ring-white/20 shadow-sm"
         aria-label="Search movies"
       />
       <button

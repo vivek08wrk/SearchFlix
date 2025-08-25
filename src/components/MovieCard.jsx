@@ -40,7 +40,7 @@ export default function MovieCard({ allMovieData, loading }) {
 
   if (!allMovieData || allMovieData.length === 0) {
     return (
-      <div className="text-center text-gray-500 py-16">Search for movies to get started.</div>
+      <div className="text-center text-gray-200 py-16">Search for movies to get started.</div>
     );
   }
 
