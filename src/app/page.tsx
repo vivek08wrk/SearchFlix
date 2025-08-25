@@ -17,7 +17,7 @@ export default function HomePage() {
       const data = await res.json();
       setAllMovieData(data.Search);
       setLoading(false);
-    } catch (error) {
+    } catch {
       setLoading(false);
     }
   };

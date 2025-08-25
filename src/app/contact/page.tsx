@@ -8,7 +8,7 @@ export default function ContactPage() {
     <main className="max-w-5xl mx-auto px-4 py-10">
       <div className="surface rounded-2xl border shadow-sm p-6 md:p-8">
         <h1 className="text-3xl font-bold mb-2 text-gray-900">Contact</h1>
-        <p className="text-gray-700 mb-6">We'd love to hear your feedback and ideas for SearchFlix.</p>
+  <p className="text-gray-700 mb-6">We&apos;d love to hear your feedback and ideas for SearchFlix.</p>
         <form className="grid gap-4 max-w-xl">
           <div>
             <label className="block text-sm font-medium text-gray-700">Name</label>
